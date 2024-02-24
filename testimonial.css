@@ -1,0 +1,107 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  display: grid;
+  gap: 24px;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+.pic {
+  border-radius: 50%;
+}
+
+.picture {
+  border-radius: 50%;
+  border: 2px solid hsl(263, 64%, 34%);
+}
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  padding: 30px 50px;
+  border-radius: 16px;
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  padding: 30px 50px;
+  border-radius: 16px;
+}
+
+.janet,
+.kira {
+  background-color: bisque;
+  padding: 30px 50px;
+  border-radius: 16px;
+}
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  padding: 30px 50px;
+  border-radius: 16px;
+}
+
+.info1 h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: hsl(219, 29%, 14%);
+}
+
+.stat1 h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(219, 29%, 14%);
+  padding-bottom: 18px;
+}
+
+.info h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+}
+
+.info p {
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(0, 0%, 81%);
+}
+
+.stat h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 18px;
+}
+
+.stat p {
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(0, 0%, 81%);
+}
+
+@media (min-width: 50em) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .kira {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+}
